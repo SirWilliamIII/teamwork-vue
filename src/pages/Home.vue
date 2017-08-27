@@ -1,6 +1,6 @@
 <template>
     <div class="hero is-dark is-fullheight" id="homepage">
-
+        <hero/>
     </div>
 </template>
 
