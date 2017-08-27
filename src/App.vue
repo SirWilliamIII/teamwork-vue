@@ -1,15 +1,24 @@
 <template>
     <div id="app">
-        <homepage/>
+        <div class="column">
+            <Titlebar/>
+            <hr>
+            <router-view>
+            </router-view>
+            <hr>
+            <Foot/>
+        </div>
     </div>
 </template>
 
 <script>
-	import homepage from './pages/Home'
+	import Titlebar from './components/Titlebar.vue'
+	import Foot from './components/Foot.vue'
 	export default {
 		name:       'app',
 		components: {
-			homepage
+			Titlebar,
+			Foot
 		}
 	}
 </script>

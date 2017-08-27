@@ -7,10 +7,12 @@ import { routes } from './routes'
 //Vue.use(VueResource)
 Vue.use(VueRouter)
 
-Vue.config.productionTip = false
+const router = new VueRouter({
+	routes
+})
 
 new Vue({
 	el:         '#app',
-	routes,
+	router,
 	render: h => h(App)
 })

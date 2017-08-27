@@ -1,17 +1,17 @@
 <template>
-    <div id="homepage">
-		<titlebar/>
+    <div class="hero is-dark is-fullheight" id="homepage">
+
     </div>
 </template>
 
 <script>
-	import titlebar from '../components/Titlebar'
-    export default {
-        name: 'homepage',
+	import hero from '../components/Hero'
+	export default {
+		name:       'homepage',
 		components: {
-        	titlebar
-        }
-    }
+			hero
+		}
+	}
 </script>
 
 <style>
